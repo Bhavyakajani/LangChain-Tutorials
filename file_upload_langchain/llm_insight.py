@@ -34,7 +34,7 @@ def extract_with_llm(file_path: str) -> dict:
     return response_json
 
 if __name__ == "__main__":
-    pdf_path = "C:/Users/tonyj/PyCharmMiscProject/documents/user_story.pdf"
+    pdf_path = "filepath.pdf"
 
     if not Path(pdf_path).exists():
         raise FileNotFoundError(f"PDF not found at: {pdf_path}")
