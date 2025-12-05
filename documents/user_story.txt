@@ -1,0 +1,27 @@
+Title: Allow Santa's reindeer's to run on the surface of water
+
+Description:
+When delivering gift on a hot climate, typically in the region between the Tropic of Cancer and the Tropic of Capricorn,
+due to a relatively warm weather the water is warm enough to not freeze in smaller river bodies.
+So at times when the weather is foggy, Santa needs to go over the water. Currently, he needs to go around them.
+To make the gift deliveries much faster Santa's reindeer's should be able to run over water efficiently.
+
+Acceptance criteria:
+
+AC1 – Water Detection
+
+Given Santa is delivering in a warm-climate region,
+When a water body is detected ahead during foggy weather
+Then the system must activate Water Run Mode.
+
+AC2 – Reindeer Water Run
+
+Given Water Run Mode is active,
+When the reindeer's begin crossing the water,
+Then they must run over the surface without sinking or slowing down.
+
+AC3 – Route Optimization
+
+Given a water body lies between Santa and the destination
+When Water Run Mode is available
+Then the route must be optimized to cross the water instead of going around it.
