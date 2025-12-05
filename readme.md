@@ -2,7 +2,7 @@
 
 ### Lets start by connecting to an LLM
 
-```commandline
+```python
 from langchain_ollama import ChatOllama
 
 llm = ChatOllama(
@@ -14,7 +14,7 @@ print(response.content)
 
 ### Now, time to make it interesting
 We will now use ```streamlit``` library to create a frontend for the llm by adding the following snippet.
-```commandline
+```python
 st.title("Flying Llama")
 question = st.text_input("Enter a question:")
 
